@@ -1,0 +1,3 @@
+{
+  "*.{js,json,css,md}": ["prettier --write '*/src/**/*.js'", "git add"]
+}
