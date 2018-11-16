@@ -5,6 +5,13 @@
   "repository": "git@github.com:FireInjun/lambdanotes-project-monorepo.git",
   "author": "FireInjun <mk@fireinjun.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"cd notes-client && yarn start\" \"cd notes-server && yarn start\"\"cd notes-auth && yarn start\"",
+    "setup": "concurrently \"cd notes-client && yarn \" \"cd notes-server && yarn \"\"cd notes-auth && yarn \"",
+    "test": "concurrently \"cd notes-client && yarn test\" \"cd notes-server && yarn test\"\"cd notes-auth && yarn test\"",
+    "lint": "eslint './**/*'",
+    "pretty": "prettier --write '*/src/**/*.{js,json,css,md}'"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "5.3.0",
@@ -16,5 +23,8 @@
     "husky": "^1.1.4",
     "lint-staged": "^8.0.4",
     "prettier": "^1.15.2"
+  },
+  "dependencies": {
+    "concurrently": "^4.0.1"
   }
 }
