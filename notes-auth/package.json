@@ -1,0 +1,8 @@
+{
+  "name": "notes-auth",
+  "version": "1.0.0",
+  "description": "authserver",
+  "main": "index.js",
+  "author": "fireinjun",
+  "license": "MIT"
+}
